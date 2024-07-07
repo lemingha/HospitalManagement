@@ -268,3 +268,4 @@ E:\OSSM_project-main\OSSM_project-main\OSSSM_1\obj\Debug\net5.0\staticwebassets\
 E:\OSSM_project-main\OSSM_project-main\OSSSM_1\obj\Debug\net5.0\OSSSM_1.csproj.Up2Date
 E:\OSSM_project-main\OSSM_project-main\OSSSM_1\obj\Debug\net5.0\OSSSM_1.genruntimeconfig.cache
 E:\OSSM_project-main\OSSM_project-main\OSSSM_1\obj\Debug\net5.0\ref\OSSSM_1.dll
+E:\OSSM_project-main\OSSM_project-main\OSSSM_1\obj\Debug\net5.0\OSSSM_1.sourcelink.json

@@ -81,7 +81,14 @@
                                         <td id="lichphauthuat">@item.Patient_Checkin</td>
                                         <td id="lichphauthuat">@item.Patient_Name</td>
                                         <td id="lichphauthuat">@item.Patient_DateofBirth</td>
-                                        <td id="lichphauthuat">@item.Patient_Gender</td>
+                                        @if(item.Patient_Gender == 0)
+                                        {
+                                            <td id="lichphauthuat">Nam</td>
+                                        }
+                                        else
+                                        {
+                                            <td id = "lichphauthuat" > Nữ </td >
+                                                    }
                                         <td id="lichphauthuat">@item.Patient_Disease</td>
                                         <td id="delete">
                                             <a asp-action="Patient_Save">

@@ -78,8 +78,15 @@
                                 <tr>
                                     <td id="lichphauthuat">@item.room.Room_Type</td> 
                                     <td id="lichphauthuat">@item.room.Room_ID</td>
-                                    <td id="tinhtrangphong">@item.surgery.Surgery_Status</td>
-                                    <td id="lichphauthuat">@item.surgery.Surgery_Time</td>
+                                    @if(item.surgery.Surgery_Status == -1)
+                                    {
+                                            <td id="tinhtrangphong">Trống</td>
+                                    }
+                                        else
+                                        {
+                                            <td id="tinhtrangphong">Đang sử dụng</td>
+                                        }
+                                        <td id="lichphauthuat">@item.surgery.Surgery_Time</td>
                                     <td id="lichphauthuat">@item.staff.Staff_Name</td> 
                                 </tr>
                             }
