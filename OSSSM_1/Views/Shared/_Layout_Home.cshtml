@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiêu đề Website của bạn</title>
+    <link rel="stylesheet" href="./css/layout-home.css">
+    <link rel="stylesheet" href="./css/nhanSu&DuAn.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        <<div id="header" class="header">
+        <div class="header-logo">
+            <img src="~/img/layout/logo.jpg" alt="" class="logo">
+            <h3 style="text-align: center; font-size: 20px;">
+                Three Goats Shop
+            </h3>
+        </div>
+
+        <div class="header-list">
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <ul class="user-info">
+                    @RenderSection("Login")
+                </ul>
+            </div>
+
+            @RenderSection("Buttons")
+        </div>
+    </div>
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SHOP THE GOAT</h1>
+            <p>Tạp hóa số 1 Việt Nam</p>
+        </div>
+    </section>
+</main>
+<div class="tieu-de">BEST SELLER</div>
+<div class="best-seller">
+    <button class="arrow-button left-arrow">&lt;</button>
+    <div class="card-container">
+        <div class="card">
+            <img src="~/img/layout/t-shirt.jpg" alt="T-shirt">
+            <h3>T-shirt</h3>
+            <p>Mô tả sản phẩm T-shirt</p>
+            <button class="shop-now-btn">SHOP NOW</button>
+        </div>
+        <div class="card">
+            <img src="~/img/layout/jeans.jpg" alt="Jeans">
+            <h3>Jeans</h3>
+            <p>Mô tả sản phẩm Jeans</p>
+            <button class="shop-now-btn">SHOP NOW</button>
+        </div>
+        <div class="card">
+            <img src="~/img/layout/hoddie.jpg" alt="Hoodie">
+            <h3>Hoodie</h3>
+            <p>Mô tả sản phẩm Hoodie</p>
+            <button class="shop-now-btn">SHOP NOW</button>
+
+        </div>
+    </div>
+    <button class="arrow-button right-arrow">&gt;</button>
+</div>
+<div class="container">
+    <div class="text-section">
+        <h2>ABOUT US</h2>
+        <p>We are Provide Bestdabsbfxbc.</p>
+        <p>More text...</p>
+        <button class="shop-now-btn">SHOP NOW </button>
+    </div>
+    <div class="fashion-display">
+        <div class="fashion-text">
+            <p>Mua đi áo đẹp vcl luôn luonac skv alv</p>
+            <p>dvnpasmpoamsd adnsoandoia</p>
+        </div>
+        <img class="fashion-image" src="./img/layout/fashion image.png" alt="Bộ trang phục thời trang">
+    </div>
+
+</div>
+<div class="container">
+    <img src="~/img/layout/why_choose_us.png" alt="Hình Ảnh" class="left-image">
+    <div class="right-section">
+        <div class="why-choose-us">
+            <h2>Why choose us?</h2>
+            <p>abssssssssssssssrg5yshdddddd dfx</p>
+            <p>ksbrsboiwnbv s vsd sdfsdf sfsdd ffffffffffffffffff</p>
+            <p>mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmm</p>
+        </div>
+        <div class="image-cards">
+            <div class="card1"></div>
+            <div class="card1"></div>
+            <div class="card1"></div>
+            <div class="card1"></div>
+        </div>
+    </div>
+</div>
+<div class="feedback-container">
+    <h2>CLIENT FEEDBACK</h2>
+    <div class="feedback-card">
+        <blockquote>
+            "fbfffffffffffffffffffffffff vsdfdsf cds sddfs fs df sd f sd fs df ue f qt ey rh 6r h 6j 54 jh 54j"
+        </blockquote>
+        <div class="client-info">
+            <span class="client-avatar"></span>
+            <span class="client-name">Name</span>
+        </div>
+    </div>
+    <div class="feedback-card">
+        <blockquote>
+            "fbfffffffffffffffffffffffff vsdfdsf cds sddfs fs df sd f sd fs df ue f qt ey rh 6r h 6j 54 jh 54j"
+        </blockquote>
+        <div class="client-info">
+            <span class="client-avatar"></span>
+            <span class="client-name">Name</span>
+        </div>
+    </div>
+    <div class="feedback-navigation">
+        <span class="nav-dot active"></span>
+        <span class="nav-dot"></span>
+    </div>
+</div>
+<div class="contact-container">
+    <h2>CONTACT US</h2>
+    <p>fbfffffffffffffffffffffffffff vsdfdsf cds sddfs fs df sd f sd fs df ue f qt ey rh 6r h 6j 54 jh 54j</p>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="send-btn">Send Message →</button>
+    </form>
+</div>
+
+
+</body>
+</html>

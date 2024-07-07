@@ -1,0 +1,116 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<!--phần đầu-->
+<head>
+    <title>Thêm nhân sự</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="trangchinh.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/2f8895050a.js" crossorigin="anonymous"></script>
+    <style>
+        .list-group.item4 {
+            background-color: #001F54;
+            color: #FEFCFB !important;
+        }
+    </style>
+</head>
+<body>
+        <div class="surgery-content">
+            <div class="surgery-navigator">
+                <div class="surgery-major-button">
+                    <!-- nghiệp vụ -->
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            NGHIỆP VỤ
+                            <div class="dropbtn-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="nhansu-them.html">Thêm nhân viên</a>
+                            <a href="#">Chỉnh sửa thông tin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surgery-major-title">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    THÊM NHÂN VIÊN
+                </div>
+            </div> <br>
+            <form asp-action="Staff_Add" method="post"> 
+                <div class="medicalrecord-filling-form p3">
+                <div class="row 1">
+                    <div class="surgery-form patientname">
+                        <label for="patient-name">Họ và tên nhân sự</label>
+                        <input name="sname" type="text" id="patient-name">
+                    </div>
+                    <div class="medicalrecord patient-dateofbirth">
+                        <label for="birthday">Ngày sinh</label>
+                        <input type="date" id="birthday" name="Sbirthday">
+                    </div>
+                    <div class="medicalrecord patient-sex">
+                        <label for="surgery-form-roomcode">Giới tính</label>
+                        <select name="sgender" id="surgery-form-roomcode">
+                            <option value="1">Nam</option>
+                            <option value="0">Nữ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row 2">
+                    <div class="medicalrecord patient-number">
+                        <label for="patient-number">Số điện thoại</label>
+                        <input name="sphone" type="number" id="patient-number">
+                    </div>
+                    <div class="medicalrecord patient-ID">
+                        <label for="patient-id">Số CMT/CCCD</label>
+                        <input name="sID" type="number" id="patient-id">
+                    </div>
+                </div>
+                <div class="surgery-form roomcode">
+                    <label for="surgery-form-roomcode">Loại nhân sự</label>
+                    <select name="position" id="surgery-form-roomcode">
+                        <option value="0">Bác sĩ </option>
+                        <option value="1">Điều dưỡng</option>
+                        <option value="2">Y tá</option>
+                        <option value="3">Trưởng khoa</option>
+                        <option value="4">Phó trưởng khoa</option>
+                    </select>
+                </div> <br>
+                <div class="row 4">
+                    <div class="staff salary">
+                        <label for="salary">Mức lương</label>
+                        <select id="salary" onchange="calculateSalary()">
+                            <option value="1">Mức 1</option>
+                            <option value="2">Mức 2</option>
+                            <option value="3">Mức 3</option>
+                            <option value="4">Mức 4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                <div class="submit-reset-button p1">
+                    <div class="submit-button">
+                <a href="lichphauthuat.html">
+                    <button type="submit" id="submit-button">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        LƯU
+                    </button>
+                </a>
+            </div>
+                    <div class="reset-button">
+                <button id="reset-button">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    LÀM LẠI
+                </button>
+            </div>
+                </div>
+
+            </form>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<!--phần đầu-->
+<head>
+    <title>Lưu bệnh án</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="trangchinh.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/2f8895050a.js" crossorigin="anonymous"></script>
+    <style>
+        .list-group.item3 {
+            background-color: #001F54;
+            color: #FEFCFB !important;
+        }
+    </style>
+</head>
+<body>
+        <div class="surgery-content">
+            <div class="surgery-navigator">
+                <div class="surgery-major-button">
+                    <!-- nghiệp vụ -->
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            NGHIỆP VỤ
+                            <div class="dropbtn-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="benhan_them.html">Thêm bệnh án</a>
+                            <a href="benhnhan_luu.html">Lưu bệnh án</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surgery-major-title">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    LƯU BỆNH ÁN
+                </div>
+            </div> <br>
+            <div class="medicalrecord-filling-form p1">
+                <div class="row 1">
+                    <div class="surgery-form patientname">
+                        <label for="patient-name">Họ và tên bệnh nhân</label>
+                        <input type="text" id="patient-name" placeholder="NGUYỄN VĂN A">
+                    </div>
+                    <div class="medicalrecord patient-dateofbirth">
+                        <label for="birthday">Ngày sinh</label>
+                        <input type="date" id="birthday" name="birthday" placeholder="02/04/2004">
+                    </div>
+                    <div class="medicalrecord patient-sex">
+                        <label for="surgery-form-roomcode">Giới tính</label>
+                        <select name="medicalrecordsex" id="surgery-form-roomcode">
+                            <option value="TH">Nam</option>
+                            <option value="TH">Nữ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row 2">
+                    <div class="medicalrecord patient-number">
+                        <label for="patient-number">Số điện thoại</label>
+                        <input type="tel" id="patient-number" placeholder="0943005585">
+                    </div>
+                    <div class="medicalrecord patient-ID">
+                        <label for="patient-id">Số CMT/CCCD</label>
+                        <input type="number" pattern="[0-9]{12}" id="patient-id" placeholder="045688243773">
+                    </div>
+                </div>
+                <div class="surgery-form patient-address">
+                    <label for="patient-address">Địa chỉ</label>
+                    <input type="text" id="patient-address" placeholder="Số 10 ngách 64 ngõ An Sơn Đại La">
+                </div><br>
+                <div class="row 3">
+                    <div class="medicalrecord symptom">
+                        <label for="symptom">Triệu chứng</label>
+                        <input type="text" id="symptom" placeholder="Nôn mửa, đau bụng">
+                    </div>
+                    <div class="medicalrecord disease">
+                        <label for="dissease">Chẩn đoán</label>
+                        <input type="text" id="diagnose" placeholder="Viêm ruột thừa">
+                    </div> <br>
+                </div>
+                <div class="row 4">
+                    <div class="medicalrecord hospitalfee">
+                        <label for="dissease">Viện phí</label>
+                        <input type="number" id="fee">
+                    </div>
+                </div>
+                <div class="row 5">
+                    <div class="medicalrecord timein">
+                        <label for="timein">Thời gian vào viện</label>
+                        <input type="time" id="timein">
+                    </div>
+                    <div class="medicalrecord timeout">
+                        <form action="/action_page.php">
+                            <label for="birthdaytime">Thời gian ra viện</label>
+                            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-reset-button">
+                <div class="submit-button">
+                    <a href="lichphauthuat.html">
+                        <button id="submit-button">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            LƯU
+                        </button>
+                    </a>
+                </div>
+                <div class="reset-button">
+                    <button id="reset-button">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        LÀM LẠI
+                    </button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

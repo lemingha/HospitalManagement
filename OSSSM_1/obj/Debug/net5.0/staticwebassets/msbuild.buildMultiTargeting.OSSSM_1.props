@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OSSSM_1.props" />
+</Project>
